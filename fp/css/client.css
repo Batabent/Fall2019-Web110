@@ -1,0 +1,158 @@
+/* Global rules */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+html {
+    background-color: #fff;
+}
+
+section{
+    overflow: auto;
+    background: #000; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    
+    
+}
+
+section p{
+    font-size: 1.5em;
+    color:#fff;
+    text-align: center;
+}
+
+p {
+    margin: 1em; /* Top Right Bottom Left (TRBL) */
+}
+
+
+/*Top Navigation Bar*/
+.nav-links{
+    float:right;
+}
+.logo{
+    float:left;
+}
+
+.logo img{
+    width: 130px;
+    margin-left: 15px;
+}
+
+
+/* Language bar */
+
+
+
+/*Bottom Nav icon*/
+.socialmedia-icons {
+    float: left;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.socialmedia-icons a {
+   margin-right: 10px;
+   padding-right: 10px;
+}
+
+.language-bar {
+    list-style: none;
+    display: flex;
+    
+
+}
+
+/*footer*/
+footer {
+  background: #d6d6d6 ;
+  text-align: center;  
+  color: #000;
+  font-size: 0.8em;
+  padding: 0.8em;
+  line-height: 0.5em;
+  clear: both;
+  }
+  
+footer a { 
+    text-decoration: none;
+    color: #0313fc; 
+}
+
+footer a:hover {  
+    color: #ddd;
+}
+
+div.gallery{
+    text-align:center;
+}
+
+figure {
+    display:inline-block;
+    margin:0.25%;
+}
+/* Responsive rules */
+
+/* DESKTOP */
+@media all and (min-width:1280px) {
+      main {
+        width: 100%;
+    }
+    
+      img.desktop {
+        width:60%;
+        float: right;
+        margin-left: 1em;
+    }
+    
+    img.tablet,img.phone {
+        display: none;
+    }
+}
+
+
+/* TABLET */
+@media all and (min-width:768px) and (max-width:1279px) {
+    
+      main {
+        width: 100%;
+    }
+    
+    img.tablet {
+        float: right;
+        width: 60%;
+        margin-left: 1em;
+    }
+    
+    img.desktop, img.phone {
+        display: none;
+    }
+}
+
+/* PHONE */
+@media all and (max-width:767px) {
+    
+     main {
+        width: 100%;
+    }
+    
+      
+    img.phone {
+        width: 100%;
+    }
+    
+    img.desktop, img.tablet {
+        display: none;
+    }
+    
+    section {
+        display:block;      
+    }
+    
+    section p{
+    font-size: 1em;
+    }
+}
